@@ -17,7 +17,12 @@
         "tsConfig": "apps/design-system/tsconfig.app.json",
         "assets": [
           "apps/design-system/src/favicon.ico",
-          "apps/design-system/src/assets"
+          "apps/design-system/src/assets",
+          {
+            "glob": "**/*",
+            "input": "./libs/ui-components/assets",
+            "output": "./assets"
+          }
         ],
         "styles": ["apps/design-system/src/styles.scss"],
         "scripts": []
